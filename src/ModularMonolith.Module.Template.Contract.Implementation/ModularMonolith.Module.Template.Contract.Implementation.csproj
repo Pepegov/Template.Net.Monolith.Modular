@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Mapster" />
+      <PackageReference Include="MediatR" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.BackgroundJobs\ModularMonolith.Module.Template.BackgroundJobs.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.Contract\ModularMonolith.Module.Template.Contract.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.Controllers\ModularMonolith.Module.Template.Controllers.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.DataAccess.Interface\ModularMonolith.Module.Template.DataAccess.Interface.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.DataAccess.Sqlite\ModularMonolith.Module.Template.DataAccess.Sqlite.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.UseCases\ModularMonolith.Module.Template.UseCases.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Builder\Commands\" />
+      <Folder Include="Builder\Dto\" />
+      <Folder Include="Builder\Mappings\" />
+      <Folder Include="Builder\Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mapster" />
+      <PackageReference Include="MediatR" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\ModularMonolith.Module.Builder.Contracts\ModularMonolith.Module.Builder.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>
+

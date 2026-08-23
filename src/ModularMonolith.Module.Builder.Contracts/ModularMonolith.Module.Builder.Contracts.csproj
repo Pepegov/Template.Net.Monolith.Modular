@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" />
+      <PackageReference Include="Quartz.Extensions.DependencyInjection" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Framework.Utils\ModularMonolith.Framework.Utils.csproj" />
+    </ItemGroup>
+
+</Project>
+
