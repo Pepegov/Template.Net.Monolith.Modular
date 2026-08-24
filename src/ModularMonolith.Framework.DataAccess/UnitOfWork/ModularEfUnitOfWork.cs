@@ -1,5 +1,3 @@
-using System.Data;
-using System.Data.Common;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace ModularMonolith.Framework.DataAccess.UnitOfWork;

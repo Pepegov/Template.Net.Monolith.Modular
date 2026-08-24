@@ -3,7 +3,6 @@ using ModularMonolith.Framework.UseCases.Implementation;
 using ModularMonolith.Framework.Utils.Modules;
 using ModularMonolith.Module.Builder.Contracts.Implementation;
 using ModularMonolith.Module.Template.Contract.Implementation;
-using ModularMonolith.Web.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
