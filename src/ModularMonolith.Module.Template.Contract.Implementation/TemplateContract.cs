@@ -11,10 +11,11 @@ public class TemplateContract(ITemplateDbContext templateDbContext) : ITemplateC
 {
     public IDbContext DbContext => templateDbContext;
     
-    public async Task CreateAsync(TemplateDto dto, CancellationToken cancellationToken)
+    public async Task<Guid> CreateAsync(TemplateDto dto, CancellationToken cancellationToken)
     {
         var entity = dto.Adapt<Domain.Agreggates.Template>();
         await templateDbContext.Templates.AddAsync(entity, cancellationToken);
+        return entity.Id;
     }
 
     public async Task<IList<TemplateDto>> GetAsync(CancellationToken cancellationToken)

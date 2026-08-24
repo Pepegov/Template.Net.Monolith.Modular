@@ -23,6 +23,7 @@
       <ProjectReference Include="..\ModularMonolith.Module.Builder.DataAccess.Interface\ModularMonolith.Module.Builder.DataAccess.Interface.csproj" />
       <ProjectReference Include="..\ModularMonolith.Module.Builder.DataAccess.Sqlite\ModularMonolith.Module.Builder.DataAccess.Sqlite.csproj" />
       <ProjectReference Include="..\ModularMonolith.Module.Builder.UseCases\ModularMonolith.Module.Builder.UseCases.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.Contract\ModularMonolith.Module.Template.Contract.csproj" />
     </ItemGroup>
 
 </Project>

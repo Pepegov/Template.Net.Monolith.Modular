@@ -1,19 +1,21 @@
+using System.Data;
 using System.Data.Common;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace ModularMonolith.Framework.DataAccess.UnitOfWork;
 
 public class ModularEfUnitOfWork(IServiceProvider serviceProvider) : IUnitOfWork 
 {
-    private DbTransaction? _transaction;
+    private IDbContextTransaction? _transaction;
     private readonly List<IContract> _contracts = [];
     
-    public void UseTransaction(DbTransaction transaction)
+    public void UseTransaction(IDbContextTransaction transaction)
     {
         _transaction = transaction;
         _contracts.ForEach(x => x.DbContext.UseTransaction(_transaction));
     }
 
-    public async Task UseTransactionAsync(DbTransaction transaction, CancellationToken cancellationToken = default)
+    public async Task UseTransactionAsync(IDbContextTransaction transaction, CancellationToken cancellationToken = default)
     {
         _transaction = transaction;
         foreach (var contract in _contracts)

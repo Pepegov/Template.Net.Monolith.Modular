@@ -1,11 +1,11 @@
-﻿using System.Data.Common;
+﻿using Microsoft.EntityFrameworkCore.Storage;
 
 namespace ModularMonolith.Framework.DataAccess.UnitOfWork;
 
 public interface IUnitOfWork
 {
-    void UseTransaction(DbTransaction transaction);
-    Task UseTransactionAsync(DbTransaction transaction, CancellationToken cancellationToken = default);
+    void UseTransaction(IDbContextTransaction transaction);
+    Task UseTransactionAsync(IDbContextTransaction transaction, CancellationToken cancellationToken = default);
     Task RollbackTransaction(CancellationToken ct = default);
     Task CommitTransaction(CancellationToken ct = default);
     

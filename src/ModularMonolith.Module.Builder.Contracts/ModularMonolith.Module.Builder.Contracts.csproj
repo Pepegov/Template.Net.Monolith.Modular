@@ -14,6 +14,7 @@
     <ItemGroup>
       <ProjectReference Include="..\ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj" />
       <ProjectReference Include="..\ModularMonolith.Framework.Utils\ModularMonolith.Framework.Utils.csproj" />
+      <ProjectReference Include="..\ModularMonolith.Module.Template.Contract\ModularMonolith.Module.Template.Contract.csproj" />
     </ItemGroup>
 
 </Project>
