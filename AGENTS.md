@@ -39,7 +39,9 @@ dotnet run --project Tools/ModularMonolith.Tools.Migrator -- --sql
 
 `--update` applies migrations in dependency order. `--sql` creates idempotent SQL scripts in `src/Tools/ModularMonolith.Tools.Migrator/Scripts/Sql`.
 
-## Modules
+## Architecture
+
+### Modules
 
 A module is an isolated vertical part of the domain with its own public contract. The current solution contains `Template` and `Builder` modules; their project names start with `ModularMonolith.Module.<ModuleName>`.
 
@@ -63,7 +65,7 @@ Module boundary rules:
 - Do not create cyclic dependencies between modules. When adding a module or dependency, update the list and order in `Tools/ModularMonolith.Tools.Migrator/Program.cs`: migrations must run from independent modules to dependent ones.
 - When a scenario spans multiple modules, begin the transaction in the orchestrating module and attach the other contracts through `IUnitOfWork`. Do not replace this with direct access to another module `DbContext`.
 
-## Layers within a module
+#### Layers within a module
 
 The project uses hexagonal/clean architecture:
 
@@ -74,7 +76,7 @@ The project uses hexagonal/clean architecture:
 
 Controllers must not work directly with `DbContext`, EF entities, or external adapters. Do not pass HTTP models into the domain: use DTOs from `*.Contract`. Do not bypass a use case just to call an adapter. The exception is a module contract when another module invokes it across an explicit boundary.
 
-## Framework
+### Framework
 
 `ModularMonolith.Framework.*` is shared technical infrastructure reused by several modules, not a separate business module. It contains common abstractions and implementations:
 
@@ -86,7 +88,7 @@ Controllers must not work directly with `DbContext`, EF entities, or external ad
 
 Put code in `Framework` only when it is genuinely domain-neutral and needed by more than one module. Do not add DTOs, use cases, entities, or dependencies of a specific module there. A module may depend on Framework; Framework must not depend on a module.
 
-## Web as the composition root
+### Web as the composition root
 
 `App/ModularMonolith.Web` is the only HTTP host and the composition root, not a business module. In `Program.cs`, it:
 
