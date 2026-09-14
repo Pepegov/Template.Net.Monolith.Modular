@@ -18,10 +18,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ModularMonolith.Framework.UseCases.Implementation\ModularMonolith.Framework.UseCases.Implementation.csproj" />
-      <ProjectReference Include="..\ModularMonolith.Framework.Utils\ModularMonolith.Framework.Utils.csproj" />
-      <ProjectReference Include="..\ModularMonolith.Module.Template.Contract.Implementation\ModularMonolith.Module.Template.Contract.Implementation.csproj" />
-      <ProjectReference Include="..\ModularMonolith.Module.Builder.Contracts.Implementation\ModularMonolith.Module.Builder.Contracts.Implementation.csproj" />
+      <ProjectReference Include="..\Framework\ModularMonolith.Framework.UseCases.Implementation\ModularMonolith.Framework.UseCases.Implementation.csproj" />
+      <ProjectReference Include="..\Framework\ModularMonolith.Framework.Utils\ModularMonolith.Framework.Utils.csproj" />
+      <ProjectReference Include="..\Modules\Template\ModularMonolith.Module.Template.Contract.Implementation\ModularMonolith.Module.Template.Contract.Implementation.csproj" />
+      <ProjectReference Include="..\Modules\Builder\ModularMonolith.Module.Builder.Contracts.Implementation\ModularMonolith.Module.Builder.Contracts.Implementation.csproj" />
     </ItemGroup>
 
 </Project>

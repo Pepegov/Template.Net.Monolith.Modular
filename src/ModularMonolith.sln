@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Web", "ModularMonolith.Web\ModularMonolith.Web.csproj", "{3D491FD6-007F-4549-9ACA-4EF1E8013E26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Web", "App\ModularMonolith.Web\ModularMonolith.Web.csproj", "{3D491FD6-007F-4549-9ACA-4EF1E8013E26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{A8D09167-9492-4F76-B4EC-AD96F780304C}"
 EndProject
@@ -12,62 +12,64 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DBEB46F0-28AA-4B52-B13F-7595160940DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.Entities", "ModularMonolith.Framework.Entities\ModularMonolith.Framework.Entities.csproj", "{50EC264A-A674-43CF-B806-44F0C05F09B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.Entities", "App\Framework\ModularMonolith.Framework.Entities\ModularMonolith.Framework.Entities.csproj", "{50EC264A-A674-43CF-B806-44F0C05F09B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.Utils", "ModularMonolith.Framework.Utils\ModularMonolith.Framework.Utils.csproj", "{167324A5-15DA-46EF-9528-0AB4F0E95D9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.Utils", "App\Framework\ModularMonolith.Framework.Utils\ModularMonolith.Framework.Utils.csproj", "{167324A5-15DA-46EF-9528-0AB4F0E95D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.UseCases.Interfaces", "ModularMonolith.Framework.UseCases.Interfaces\ModularMonolith.Framework.UseCases.Interfaces.csproj", "{CEAD0DD0-E1A2-452D-B408-49B621E65BE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.UseCases.Interfaces", "App\Framework\ModularMonolith.Framework.UseCases.Interfaces\ModularMonolith.Framework.UseCases.Interfaces.csproj", "{CEAD0DD0-E1A2-452D-B408-49B621E65BE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.UseCases.Implementation", "ModularMonolith.Framework.UseCases.Implementation\ModularMonolith.Framework.UseCases.Implementation.csproj", "{9904C671-A645-4278-A45B-9E41CA82077B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.UseCases.Implementation", "App\Framework\ModularMonolith.Framework.UseCases.Implementation\ModularMonolith.Framework.UseCases.Implementation.csproj", "{9904C671-A645-4278-A45B-9E41CA82077B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{B3D1A2B3-E4FB-4FC1-A3C5-B88E10B1D26F}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		CHANGELOG.md = CHANGELOG.md
+		..\.gitignore = ..\.gitignore
+		..\AGENTS.md = ..\AGENTS.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Contract", "ModularMonolith.Module.Template.Contract\ModularMonolith.Module.Template.Contract.csproj", "{54D5B0DF-3E2E-4CC5-AC38-BD68B37C696D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Contract", "App\Modules\Template\ModularMonolith.Module.Template.Contract\ModularMonolith.Module.Template.Contract.csproj", "{54D5B0DF-3E2E-4CC5-AC38-BD68B37C696D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Contract.Implementation", "ModularMonolith.Module.Template.Contract.Implementation\ModularMonolith.Module.Template.Contract.Implementation.csproj", "{09E058DB-7A00-45EE-AEFE-7F30C233700E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Contract.Implementation", "App\Modules\Template\ModularMonolith.Module.Template.Contract.Implementation\ModularMonolith.Module.Template.Contract.Implementation.csproj", "{09E058DB-7A00-45EE-AEFE-7F30C233700E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.BackgroundJobs", "ModularMonolith.Module.Template.BackgroundJobs\ModularMonolith.Module.Template.BackgroundJobs.csproj", "{56208B35-8CC0-4CF9-B751-48ECB198449E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.BackgroundJobs", "App\Modules\Template\ModularMonolith.Module.Template.BackgroundJobs\ModularMonolith.Module.Template.BackgroundJobs.csproj", "{56208B35-8CC0-4CF9-B751-48ECB198449E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Controllers", "ModularMonolith.Module.Template.Controllers\ModularMonolith.Module.Template.Controllers.csproj", "{FD81D9B7-7F28-421D-B2B9-A0AF6AB41514}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Controllers", "App\Modules\Template\ModularMonolith.Module.Template.Controllers\ModularMonolith.Module.Template.Controllers.csproj", "{FD81D9B7-7F28-421D-B2B9-A0AF6AB41514}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.DataAccess.Interface", "ModularMonolith.Module.Template.DataAccess.Interface\ModularMonolith.Module.Template.DataAccess.Interface.csproj", "{1AF38ADE-BF3D-444A-986E-BB119B163AEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.DataAccess.Interface", "App\Modules\Template\ModularMonolith.Module.Template.DataAccess.Interface\ModularMonolith.Module.Template.DataAccess.Interface.csproj", "{1AF38ADE-BF3D-444A-986E-BB119B163AEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.DataAccess.Sqlite", "ModularMonolith.Module.Template.DataAccess.Sqlite\ModularMonolith.Module.Template.DataAccess.Sqlite.csproj", "{4E0A6531-F944-48CC-8756-7BBD5E8AEC80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.DataAccess.Sqlite", "App\Modules\Template\ModularMonolith.Module.Template.DataAccess.Sqlite\ModularMonolith.Module.Template.DataAccess.Sqlite.csproj", "{4E0A6531-F944-48CC-8756-7BBD5E8AEC80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Domain", "ModularMonolith.Module.Template.Domain\ModularMonolith.Module.Template.Domain.csproj", "{7727A436-50B7-47C4-BE2E-88E50CBEE8C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.Domain", "App\Modules\Template\ModularMonolith.Module.Template.Domain\ModularMonolith.Module.Template.Domain.csproj", "{7727A436-50B7-47C4-BE2E-88E50CBEE8C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.UseCases", "ModularMonolith.Module.Template.UseCases\ModularMonolith.Module.Template.UseCases.csproj", "{E59D03BA-EBD1-40DA-A304-F05B28D08CBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Template.UseCases", "App\Modules\Template\ModularMonolith.Module.Template.UseCases\ModularMonolith.Module.Template.UseCases.csproj", "{E59D03BA-EBD1-40DA-A304-F05B28D08CBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A7BE8AEB-C55D-4C3F-B331-3DAAC11B2671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Tests.Unit", "ModularMonolith.Tests.Unit\ModularMonolith.Tests.Unit.csproj", "{9FBF2DAB-9EC2-4DB7-BACC-9D3D728127A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Tests.Unit", "Tests\ModularMonolith.Tests.Unit\ModularMonolith.Tests.Unit.csproj", "{9FBF2DAB-9EC2-4DB7-BACC-9D3D728127A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{6E0E3642-AE1C-418B-9A62-3A9751B888F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.DataAccess", "ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj", "{8C3F7C9A-27AE-4A0A-B9BA-7D2ED56E0539}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Framework.DataAccess", "App\Framework\ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj", "{8C3F7C9A-27AE-4A0A-B9BA-7D2ED56E0539}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.BackgroundJobs", "ModularMonolith.Module.Builder.BackgroundJobs\ModularMonolith.Module.Builder.BackgroundJobs.csproj", "{C91D198E-62F0-4494-AB6B-E342A9F7AC26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.BackgroundJobs", "App\Modules\Builder\ModularMonolith.Module.Builder.BackgroundJobs\ModularMonolith.Module.Builder.BackgroundJobs.csproj", "{C91D198E-62F0-4494-AB6B-E342A9F7AC26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Contracts", "ModularMonolith.Module.Builder.Contracts\ModularMonolith.Module.Builder.Contracts.csproj", "{BE43249A-A797-4CD9-BCBA-6C24B7E95E91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Contracts", "App\Modules\Builder\ModularMonolith.Module.Builder.Contracts\ModularMonolith.Module.Builder.Contracts.csproj", "{BE43249A-A797-4CD9-BCBA-6C24B7E95E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Contracts.Implementation", "ModularMonolith.Module.Builder.Contracts.Implementation\ModularMonolith.Module.Builder.Contracts.Implementation.csproj", "{26D86BF0-4C8A-4736-AB29-3668E3385B6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Contracts.Implementation", "App\Modules\Builder\ModularMonolith.Module.Builder.Contracts.Implementation\ModularMonolith.Module.Builder.Contracts.Implementation.csproj", "{26D86BF0-4C8A-4736-AB29-3668E3385B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Controllers", "ModularMonolith.Module.Builder.Controllers\ModularMonolith.Module.Builder.Controllers.csproj", "{A2121D5A-84EC-40A3-8426-2CF40D52522D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Controllers", "App\Modules\Builder\ModularMonolith.Module.Builder.Controllers\ModularMonolith.Module.Builder.Controllers.csproj", "{A2121D5A-84EC-40A3-8426-2CF40D52522D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.DataAccess.Interface", "ModularMonolith.Module.Builder.DataAccess.Interface\ModularMonolith.Module.Builder.DataAccess.Interface.csproj", "{8E186078-08B9-4D56-9B9B-EFCB2BCAC195}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.DataAccess.Interface", "App\Modules\Builder\ModularMonolith.Module.Builder.DataAccess.Interface\ModularMonolith.Module.Builder.DataAccess.Interface.csproj", "{8E186078-08B9-4D56-9B9B-EFCB2BCAC195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.DataAccess.Sqlite", "ModularMonolith.Module.Builder.DataAccess.Sqlite\ModularMonolith.Module.Builder.DataAccess.Sqlite.csproj", "{15D143D7-4EF7-4889-A082-3A0064E2FF40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.DataAccess.Sqlite", "App\Modules\Builder\ModularMonolith.Module.Builder.DataAccess.Sqlite\ModularMonolith.Module.Builder.DataAccess.Sqlite.csproj", "{15D143D7-4EF7-4889-A082-3A0064E2FF40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Domain", "ModularMonolith.Module.Builder.Domain\ModularMonolith.Module.Builder.Domain.csproj", "{961D0F6E-4126-4CE6-B947-48D4A83AE94B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.Domain", "App\Modules\Builder\ModularMonolith.Module.Builder.Domain\ModularMonolith.Module.Builder.Domain.csproj", "{961D0F6E-4126-4CE6-B947-48D4A83AE94B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.UseCases", "ModularMonolith.Module.Builder.UseCases\ModularMonolith.Module.Builder.UseCases.csproj", "{1063CDF2-1863-4423-833F-87A7C3DA72C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Module.Builder.UseCases", "App\Modules\Builder\ModularMonolith.Module.Builder.UseCases\ModularMonolith.Module.Builder.UseCases.csproj", "{1063CDF2-1863-4423-833F-87A7C3DA72C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Tools.Migrator", "ModularMonolith.Tools.Migrator\ModularMonolith.Tools.Migrator.csproj", "{7A4CA7B3-1668-4C69-8688-DC81CA3FEDDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Tools.Migrator", "Tools\ModularMonolith.Tools.Migrator\ModularMonolith.Tools.Migrator.csproj", "{7A4CA7B3-1668-4C69-8688-DC81CA3FEDDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

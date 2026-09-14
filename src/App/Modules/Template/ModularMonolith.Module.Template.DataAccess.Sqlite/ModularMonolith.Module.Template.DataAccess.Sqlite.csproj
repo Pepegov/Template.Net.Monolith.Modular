@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj" />
+      <ProjectReference Include="..\..\..\Framework\ModularMonolith.Framework.DataAccess\ModularMonolith.Framework.DataAccess.csproj" />
       <ProjectReference Include="..\ModularMonolith.Module.Template.DataAccess.Interface\ModularMonolith.Module.Template.DataAccess.Interface.csproj" />
     </ItemGroup>
 
